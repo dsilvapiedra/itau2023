@@ -1,26 +1,27 @@
 :root {
-    --color-dark: #000000;
-    --color-light: #ffffff;
-    --color-bg:#5F9EA0;
-    --color-primary: #1a8fe3;
-    --size-step-0: 1rem;
-    --size-step-1: 1.25rem;
-    --size-step-2: 1.56rem;
-    --size-step-3: 1.95rem;
-    --size-step-4: 2.43rem;
-  }
+  --color-dark: #000000;
+  --color-light: #ffffff;
+  --color-bg: #5f9ea0;
+  --color-primary: #1a8fe3;
+  --size-step-0: 1rem;
+  --size-step-1: 1.25rem;
+  --size-step-2: 1.56rem;
+  --size-step-3: 1.95rem;
+  --size-step-4: 2.43rem;
+}
+
 body {
-    background: var(--color-bg);
-    color: var(--color-dark);
-    padding: 2em;
-    font-family: Georgia, serif;
-    font-size: var(--size-step-0);
-  }
+  background: var(--color-bg);
+  color: var(--color-dark);
+  padding: 2em;
+  font-family: Georgia, serif;
+  font-size: var(--size-step-0);
+}
 h1 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 5px;
-    letter-spacing: .05em
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  letter-spacing: 0.05em;
 }
 
 p {
@@ -28,21 +29,36 @@ p {
   -webkit-font-smoothing: antialiased !important;
   -moz-font-smoothing: antialiased !important;
   text-rendering: optimizelegibility !important;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
   font-size: 1em;
   line-height: calc(1ex / 0.32);
   margin: calc(1ex / 0.32) 0;
 
-  width: 60ch;
+  width: 100%;
   max-width: 100%;
   text-align: justify;
 }
 
-.maintext{
-    margin: auto;
-    width: 50%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+.maintext {
+  margin: auto;
+  width: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 
-    /* border: 3px dashed green; */
-    padding: 10px;
+  /* border: 3px dashed green; */
+  padding: 3% 2% 4% 2%;
+}
+
+/* Efecto Typewriter*/
+#texto-oculto {
+  display: none;
+}
+
+span {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
