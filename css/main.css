@@ -48,9 +48,30 @@ p {
   padding: 3% 2% 4% 2%;
 }
 
+.links-navegacion {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Efecto Typewriter*/
 #texto-oculto {
   display: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+#cargar-btn {
+}
+
+em {
+  text-decoration: underline #290b0a;
+}
+
+em:hover {
+  cursor: pointer;
 }
 
 span {

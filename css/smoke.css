@@ -1,0 +1,39 @@
+#smokeText {
+  animation: smokeAnimation 15s 1;
+}
+
+@keyframes smokeAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 9s ease-in-out;
+  pointer-events: none;
+}
+
+.circle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200vh;
+  height: 200vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  filter: blur(20vh);
+  opacity: 0;
+  transition: opacity 9s ease-in-out;
+  pointer-events: none;
+}

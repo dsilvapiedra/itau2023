@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../css/main.css" type="text/css" />
-
+  <link rel="stylesheet" href="../css/smoke.css" type="text/css" />
   <!-- <link rel="stylesheet" href="css/chatgptmain.css" /> -->
 
   <title>Qué es la oscuridad</title>
@@ -17,30 +17,32 @@
     <p id="texto">
       <!--<lectura en tendriua que leer>-->
       <!--<efectos en cualquier cosa>--> <!--<efectos>: luz, sonido, js text smoke-->
-      <span id="texto-oculto">
-        No sé bien si llegarás a ver esto, o si te lo tendría que leer . Muchas veces me pregunté qué es
-        lo que sentís cuando no estás, cuando te miro a los ojos y vos, desde esos ojos, a algún otro lugar, a algún
-        otro
-        tiempo. Cuando bailás en el umbral de tu persona y me pongo a llorar bajito, o me asusto, o nos reímos juntos.
-        &lt;&lt;Me pregunté&gt;&gt;, dije, aunque me sigo preguntando, como un niño mirando la luna, y me imagino
-        cualquier cosa.
+    <div id="overlay"></div>
+    <span id="texto-oculto">
+      No sé bien si llegarás a ver esto, o si te lo tendría que leer . Muchas veces me pregunté qué es
+      lo que sentís cuando no estás, cuando te miro a los ojos y vos, desde esos ojos, a algún otro lugar, a algún
+      otro
+      tiempo. Cuando bailás en el umbral de tu persona y me pongo a llorar bajito, o me asusto, o nos reímos juntos.
+      "Me pregunté", dije, aunque me sigo preguntando, como un niño mirando la luna, y me imagino
+      <em onclick="startLinternaEffect();changeId();">cualquier cosa</em>.
 
-        Llegué a escribir <a href="orden.html"> aquel cuentito </a> sobre las cosas que caen, ¿te acordás? Cualquier
-        pavada... si de todas maneras en
-        algún momento me voy a enterar por cuenta propia. Eso lo acepto con la naturalidad que asumo las primeras
-        arrugas
-        en mi frente. Esa es una de las tantas lecciones que me diste, aunque tanto repitieras que uno no aprende,
-        porque
-        todo lo vive por primera vez.
-      </span>
+      Llegué a escribir <a href="orden.html"> aquel cuentito </a> sobre las cosas que caen, ¿te acordás? Cualquier
+      pavada... si de todas maneras en
+      algún momento me voy a enterar por cuenta propia. Eso lo acepto con la naturalidad que asumo las primeras
+      arrugas
+      en mi frente. Esa es una de las tantas lecciones que me diste, aunque tanto repitieras que uno no aprende,
+      porque
+      todo lo vive por primera vez.
+    </span>
 
     </p>
-    <button id="cargar-btn">Cargar todo</button>
-    <div><a href="pagina3.html">siguiente</a></div>
 
+    <div class="links-navegacion"><a href="pagina2.html">volver</a><a href="pagina3.html">siguiente</a></div>
+    <div class="button-container"><button class="boton" id="cargar-btn">Cargar todo</button></div>
 
   </div>
   <script src="../js/typewriter.js" type="text/javascript"></script>
+  <script src="../js/smoketext.js" type="text/javascript"></script>
 </body>
 
 </html>
