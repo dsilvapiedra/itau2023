@@ -6,7 +6,8 @@ var isTyping = true;
 function typewriter() {
   if (i < txt.length && isTyping) {
     var currentChar = txt.charAt(i);
-    if (currentChar === "<") {
+    var nextChar = txt.charAt(i + 1);
+    if (currentChar === "<" && nextChar === "a") {
       // Verificar si es un enlace
       var linkEndIndex = txt.indexOf(">", i);
       var linkTextStartIndex = txt.indexOf(">", linkEndIndex) + 1;
@@ -20,6 +21,20 @@ function typewriter() {
       document.getElementById("texto").innerHTML +=
         ' <a href="' + linkUrl + '">' + linkText + " </a>";
       i = linkTextEndIndex + 5;
+    } else if (
+      currentChar === "<" &&
+      nextChar === "e" &&
+      txt.charAt(i + 2) === "m"
+    ) {
+      // Verificar si es la etiqueta <em>
+      var emEndIndex = txt.indexOf(">", i);
+      var emTextStartIndex = emEndIndex + 1;
+      var emTextEndIndex = txt.indexOf("<", emTextStartIndex);
+      var emText = txt.slice(emTextStartIndex, emTextEndIndex);
+
+      document.getElementById("texto").innerHTML +=
+        "<em onclick='startLinternaEffect();changeId();'>" + emText + "</em>";
+      i = emTextEndIndex + 4;
     } else {
       if (i === txt.length - 1) {
         document.getElementById("texto").innerHTML +=
