@@ -96,10 +96,22 @@ function moveElementsRandomly() {
   setTimeout(function () {
     clearInterval(interval); // Detener el intervalo después de 30 segundos
 
+    // // Restaurar las posiciones originales
+    // originalPositions.forEach(function (position) {
+    //   position.element.style.left = position.left + "px";
+    //   position.element.style.top = position.top + "px";
+    // });
     // Restaurar las posiciones originales
-    originalPositions.forEach(function (position) {
-      position.element.style.left = position.left + "px";
-      position.element.style.top = position.top + "px";
+    originalPositions.forEach(function (position, index) {
+      if (index === 0) {
+        // Solo el primer elemento vuelve a la posición original
+        position.element.style.left = position.left + "px";
+        position.element.style.top = position.top + "px";
+        position.element.style.position = "inherit";
+      } else {
+        // Los otros elementos se ocultan
+        position.element.style.display = "none";
+      }
     });
   }, 30000); // 30 segundos (ajusta según tus necesidades)
 }
