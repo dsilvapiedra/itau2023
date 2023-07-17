@@ -37,3 +37,18 @@
   border: none;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .landingContainer {
+    width: 90vw;
+  }
+
+  .dialog input[type="password"] {
+    width: 80%;
+  }
+
+  .dialog button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

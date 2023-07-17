@@ -45,7 +45,7 @@ p {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 
   /* border: 3px dashed green; */
-  padding: 3% 2% 4% 2%;
+  padding: 3% 2% 2% 2%;
 }
 
 .links-navegacion {
@@ -72,6 +72,7 @@ p {
 
 .button-container {
   display: flex;
+  margin-top: 10px;
   justify-content: center;
 }
 
@@ -114,5 +115,34 @@ span {
 @keyframes blinker {
   50% {
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .maintext {
+    width: 90vw;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  .links-navegacion {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links-navegacion a {
+    margin-top: 10px;
+    padding: 8px 16px;
+  }
+
+  .boton {
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }
