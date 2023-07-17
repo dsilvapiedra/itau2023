@@ -67,11 +67,13 @@ p {
 }
 
 em {
+  font-family: Helvetica;
   text-decoration: underline #290b0a;
 }
 
 em:hover {
   cursor: pointer;
+  color: purple;
 }
 
 span {

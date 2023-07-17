@@ -19,7 +19,7 @@
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9999;
   opacity: 0;
-  transition: opacity 9s ease-in-out;
+  transition: opacity 10s ease-in-out;
   pointer-events: none;
 }
 
@@ -34,6 +34,6 @@
   border-radius: 50%;
   filter: blur(20vh);
   opacity: 0;
-  transition: opacity 9s ease-in-out;
+  transition: opacity 45s ease-in-out;
   pointer-events: none;
 }
