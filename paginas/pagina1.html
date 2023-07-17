@@ -8,11 +8,12 @@
 
   <!-- <link rel="stylesheet" href="css/chatgptmain.css" /> -->
 
-  <title>Qué es la oscuridad</title>
+  <title>Qué es la Oscuridad</title>
 </head>
 <!--  -->
 
 <body>
+  <audio id="audioplayer" autobuffer="" loop="true" preload="auto" src="../assets/sonido/oribe.mp3"></audio>
   <div class="maintext">
     <p id="texto">
       <span id="texto-oculto">
@@ -35,17 +36,19 @@
 
         escribí
 
-        <a href="makina.html">un texto sobre él </a> y su manía de
+        <a href="makina.html">un texto sobre él</a> y su manía de
         solucionar todo con una máxima.
         No entendiste que eso no era un homenaje, y en de caso serlo, sería más para vos que
         para él; que lo que escribo casi nunca es lo que me gustaría que se entienda de lo que quiero expresar.
       </span>
 
     </p>
-    <button id="cargar-btn">Cargar todo</button>
-    <div><a href="pagina2.html">siguiente</a></div>
 
+    <div class="links-navegacion"><a id="volver-btn" href="../index.html">volver</a><a href="pagina2.html">siguiente</a>
+    </div>
+    <div class="button-container"><button class="boton" id="cargar-btn">Cargar todo</button></div>
   </div>
+  <script src="../js/audio.js"></script>
   <script src="../js/typewriter.js" type="text/javascript"></script>
 </body>
 

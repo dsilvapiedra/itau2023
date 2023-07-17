@@ -1,0 +1,10 @@
+body {
+  background-color: black;
+}
+
+#textoFin {
+  color: #5f9ea0;
+  text-align: center;
+  align-self: center;
+  font-size: 5rem;
+}
