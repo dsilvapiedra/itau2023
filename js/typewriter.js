@@ -3,7 +3,6 @@ var txt = document.getElementById("texto-oculto").innerHTML; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 var isTyping = true;
 
-
 /* Sonido maquina escribir*/
 var snd1 = new Audio();
 var src1 = document.createElement("source");
@@ -14,13 +13,13 @@ snd1.appendChild(src1);
 
 function togglePlay(myAudio) {
   isTyping ? myAudio.play() : myAudio.pause();
-};
+}
 
 function typewriter() {
   setTimeout(() => {
     togglePlay(snd1);
   }, 500);
-  
+
   if (i < txt.length && isTyping) {
     var currentChar = txt.charAt(i);
     var nextChar = txt.charAt(i + 1);
@@ -68,20 +67,19 @@ function typewriter() {
 
 document.getElementById("cargar-btn").addEventListener("click", function () {
   isTyping = false;
-  snd1.pause()
+  snd1.pause();
   document.getElementById("texto").innerHTML = txt;
 });
 window.addEventListener("load", function () {
   typewriter();
 });
 
-
 // function playTypewriterSound(escribiendo) {
 //   var snd1 = new Audio();
 //   var src1 = document.createElement("source");
 //   src1.type = "audio/mpeg";
 //   src1.src = "../assets/sonido/teclado.mp3";
-  
+
 //   if(escribiendo){
 //   setTimeout(() => {
 //     snd1.loop = true;
