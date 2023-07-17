@@ -1,6 +1,8 @@
-const timeout_smoke = 14000;
-const timeout_vuelta = 14500;
+const timeout_smoke = 21000;
+const timeout_vuelta = 21001;
 
+function startGlitchSoundEffect() { /*pausar audio, comenzar audio glitcheado a mano*/
+}
 function startSmokeEffect() {
   const smokeText = document.getElementById("smokeText");
   smokeText.classList.add("smoke-animation");
@@ -45,8 +47,8 @@ function startLinternaEffect() {
     circle.style.opacity = "0";
     circleTimeout = setTimeout(function () {
       document.body.removeChild(circle);
-    }, 12000);
-  }, 12000);
+    }, 20000);
+  }, 20000);
 }
 
 // function startLinternaEffect() {

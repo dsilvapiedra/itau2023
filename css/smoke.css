@@ -1,5 +1,5 @@
 #smokeText {
-  animation: smokeAnimation 15s 1;
+  animation: smokeAnimation 35s 1;
 }
 
 @keyframes smokeAnimation {
