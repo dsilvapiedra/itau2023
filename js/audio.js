@@ -1,3 +1,15 @@
+// export function playTypewriterSound() {
+//   var snd1 = new Audio();
+//   var src1 = document.createElement("source");
+//   src1.type = "audio/mpeg";
+//   src1.src = "../assets/sonido/teclado.mp3";
+//   snd1.loop = true;
+//   snd1.appendChild(src1);
+
+//   setTimeout(() => {
+//     snd1.play();
+//   }, 1500);
+// }
 function setCookie(c_name, value, exdays) {
   var exdate = new Date();
   exdate.setDate(exdate.getDate() + exdays);
@@ -41,13 +53,5 @@ function update() {
 setInterval(update, 100);
 
 
-var snd1  = new Audio();
-var src1  = document.createElement("source");
-src1.type = "audio/mpeg";
-src1.src  = "../assets/sonido/teclado.mp3";
-snd1.loop=true;
-snd1.appendChild(src1);
 
-setTimeout(() => {
-  snd1.play();
-}, 1500);
+
