@@ -119,6 +119,10 @@ span {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    justify-content: space-between;
+    display: flex;
+  }
   .maintext {
     width: 90vw;
   }
