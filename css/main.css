@@ -101,6 +101,7 @@ p {
 em {
   font-family: Helvetica;
   text-decoration: underline #290b0a;
+  animation: blinker 6s infinite;
 }
 
 em:hover {
