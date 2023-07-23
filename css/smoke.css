@@ -1,5 +1,5 @@
 #smokeText {
-  animation: smokeAnimation 35s 1;
+  /* animation: smokeAnimation 35s 1; */
 }
 
 @keyframes smokeAnimation {
@@ -36,4 +36,25 @@
   opacity: 0;
   transition: opacity 45s ease-in-out;
   pointer-events: none;
+}
+
+span.activa {
+  animation: smoke 2s linear forwards;
+}
+
+@keyframes smoke {
+  0% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    pointer-events: none;
+  }
+  100% {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(300px) translateY(-300px) rotate(720deg) scale(4);
+  }
 }

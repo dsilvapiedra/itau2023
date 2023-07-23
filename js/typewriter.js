@@ -55,7 +55,7 @@ function typewriter() {
       if (i === txt.length - 1) {
         isTyping = false;
         document.getElementById("texto").innerHTML +=
-          currentChar + "<span>\u25AE</span>";
+          currentChar + "<span class='blink'>\u25AE</span>";
       } else {
         document.getElementById("texto").innerHTML += currentChar;
       }
