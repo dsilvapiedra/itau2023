@@ -65,27 +65,10 @@ function typewriter() {
   }
 }
 
-document.getElementById("cargar-btn").addEventListener("click", function () {
+document.getElementById("cargar-btn").addEventListener("click", cargarTodo);
+
+function cargarTodo() {
   isTyping = false;
   snd1.pause();
   document.getElementById("texto").innerHTML = txt;
-});
-window.addEventListener("load", function () {
-  typewriter();
-});
-
-// function playTypewriterSound(escribiendo) {
-//   var snd1 = new Audio();
-//   var src1 = document.createElement("source");
-//   src1.type = "audio/mpeg";
-//   src1.src = "../assets/sonido/teclado.mp3";
-
-//   if(escribiendo){
-//   setTimeout(() => {
-//     snd1.loop = true;
-//    snd1.appendChild(src1);
-//     snd1.play();
-//   }, 500);} else {
-//     snd1.pause()
-//   }
-// }
+}
