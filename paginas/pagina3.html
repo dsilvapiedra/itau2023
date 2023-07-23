@@ -41,6 +41,18 @@
     <div class="button-container"><button class="boton" id="cargar-btn">Cargar todo</button></div>
 
   </div>
+  <script>
+    window.addEventListener("load", function () {
+      if (localStorage.getItem('pagina3Visited') === 'true') {
+        cargarTodo();
+        console.log('Has visitado la página 3 antes.');
+      } else {
+        typewriter();
+        localStorage.setItem('pagina3Visited', 'true');
+        console.log('Es la primera vez que visitas la página 3.');
+      }
+    });
+  </script>
   <script src="../js/audio.js"></script>
 
   <script src="../js/typewriter.js" type="text/javascript"></script>
