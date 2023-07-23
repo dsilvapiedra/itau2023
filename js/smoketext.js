@@ -42,25 +42,25 @@ function startGlitchSoundEffect() {
   }, 30000);
   /*pausar audio, comenzar audio glitcheado a mano*/
 }
+
 function startSmokeEffect() {
-  const smokeText = document.getElementById("smokeText");
-  smokeText.classList.add("smoke-animation");
+  /* Smoke effect*/
+  const text = document.getElementById("smokeText");
 
-  setTimeout(() => {
-    smokeText.style.display = "none";
-  }, timeout_smoke);
+  // divido en letras
+  text.innerHTML = text.textContent.replace(
+    /\S/g,
+    "<span class='division'>$&</span>"
+  );
 
-  setTimeout(() => {
-    smokeText.style.display = "block";
-  }, timeout_vuelta);
+  const letters = document.querySelectorAll(".division");
+  for (let i = 0; i < letters.length; i++) {
+    letters[i].addEventListener("mouseover", function () {
+      letters[i].classList.add("activa");
+    });
+  }
 }
 
-// function changeId() {
-//   const spanElement = document.getElementById("texto");
-//   spanElement.id = "smokeText";
-
-//   startSmokeEffect();
-// }
 function changeId() {
   const spanElement = document.getElementById("texto");
   spanElement.id = "smokeText";
