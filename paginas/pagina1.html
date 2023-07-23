@@ -52,11 +52,9 @@
     window.addEventListener("load", function () {
       if (localStorage.getItem('pagina1Visited') === 'true') {
         cargarTodo();
-        console.log('Has visitado la página 1antes.');
       } else {
         typewriter();
         localStorage.setItem('pagina1Visited', 'true');
-        console.log('Es la primera vez que visitas la página 1.');
       }
     });
   </script>
