@@ -9,6 +9,8 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 
   /* border: 3px dashed green; */
+  opacity: 0; /* Inicialmente oculto */
+  animation: fadeIn 6s ease-in-out forwards; /* Animación de desvanecimiento */
   padding: 3% 2% 4% 2%;
 }
 
@@ -49,7 +51,7 @@
 
   opacity: 0; /* Inicialmente oculto */
   border-radius: 4px;
-  animation: fadeIn 5s ease-in-out forwards; /* Animación de desvanecimiento */
+  animation: fadeIn 6s ease-in-out forwards; /* Animación de desvanecimiento */
 }
 
 /* Animación de desvanecimiento */
