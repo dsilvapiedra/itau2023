@@ -41,11 +41,14 @@ document.addEventListener("DOMContentLoaded", async() => {
   });
   const musica = document.querySelector(".Sphere span");
   const tagCloudClass = document.querySelector(".tagcloud");
-
+  const musicaAudio = new Audio('../assets/sonido/sweeft.wav');
+  
   musica.addEventListener("mouseover", () => {
+
     tagCloudClass.classList.add("show");
     document.querySelector(".Sphere").style.color = color;
     musica.style.color = color;
+    musicaAudio.play();
   });
 
   musica.addEventListener("click", () => {
