@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", async() => {
   
   while (isTyping){
     await new Promise(r => setTimeout(r, 2000));
-    console.log(isTyping)
   }
   var tagCloud = TagCloud(".Sphere", Texts, {
     // Sphere radius in px
