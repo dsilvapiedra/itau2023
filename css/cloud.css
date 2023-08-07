@@ -24,7 +24,10 @@
   display: contents;
 }
 
- .Sphere span {color:black}
+ .Sphere span {color:black;cursor:pointer}
  
+ .btn-pause{
+  cursor: pointer;
+ }
              
          
